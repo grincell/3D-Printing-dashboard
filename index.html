@@ -15,7 +15,6 @@
       overflow: hidden;
     }
 
-    /* Outer container: full screen + centered */
     .dashboard-wrapper {
       position: fixed;
       inset: 0;
@@ -25,7 +24,6 @@
       background: black;
     }
 
-    /* Designed canvas size (scales to fit any screen) */
     .dashboard-scale {
       width: 1920px;
       height: 1080px;
@@ -38,7 +36,6 @@
       border: none;
     }
 
-    /* Scale to fit viewport while preserving aspect ratio */
     @media (max-aspect-ratio: 16/9) {
       .dashboard-scale {
         transform: scale(calc(100vw / 1920));
@@ -58,16 +55,8 @@
     <div class="dashboard-scale">
       <iframe
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvqSOIj3Wvhzf-HEjll-RGnyhA-FA1DbSQw_XoMDMRj9_J6HJHGZ8ZWLx2rU9MomK4Eu2cE-s02Ipr/pubhtml?gid=1096374777&single=true&widget=true&headers=false"
-        loading="lazy"
       ></iframe>
     </div>
   </div>
-
-  <!-- Auto-refresh every 3 seconds -->
-  <script>
-    setTimeout(() => {
-      window.location.reload(true);
-    }, 3000);
-  </script>
 </body>
 </html>
