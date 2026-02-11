@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Google Sheets Dashboard</title>
+
+  <style>
+    /* Reset + full-height layout */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #f4f4f4;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .dashboard {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dashboard">
+    <iframe
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvqSOIj3Wvhzf-HEjll-RGnyhA-FA1DbSQw_XoMDMRj9_J6HJHGZ8ZWLx2rU9MomK4Eu2cE-s02Ipr/pubhtml?gid=1096374777&single=true&widget=true&headers=false"
+      loading="lazy"
+      referrerpolicy="no-referrer"
+    ></iframe>
+  </div>
+</body>
+</html>
